@@ -81,6 +81,8 @@
 /* - footer - */
 .footer {
 	padding: 100px 0px 30px;
+	background: rgb(244,247,255);
+	background: linear-gradient(180deg, rgba(244,247,255,1) 0%, rgba(229,235,253,1) 50%, rgba(201,215,255,1) 100%);
 }
 .block__footer{
 	font-size: 0px;
