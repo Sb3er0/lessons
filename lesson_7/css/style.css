@@ -36,7 +36,7 @@
 
 /* - main - */
 .main{
-	background: url("../img/block_2/background_1.png") 83% 50% no-repeat, url("../img/block_2/background_2.png") bottom right / auto no-repeat, #F4F7FF url("../img/block_2/background_3.png") bottom right / auto no-repeat;
+	background: url("../img/block_2/background_1.png") 83% 50% no-repeat, url("../img/block_2/background_2.png") bottom right / contain no-repeat, #F4F7FF url("../img/block_2/background_3.png") bottom right / contain no-repeat;
 	padding: 140px 0px;
 }
 [class*="__main"]{
