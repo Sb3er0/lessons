@@ -154,13 +154,9 @@ footer > div *:first-child:hover{
 	content: url("../img/icons/dots.svg");
 	display: inline-block;
 	text-align: center;
-	width: 20px;
-	height: 20px;
-	margin-right: 5px;
-}
-.dots > li:hover:before{
-	text-align: start;
-	transition: 0.8s;
+	width: 8px;
+	height: 8px;
+	margin-right: 10px;
 }
 .checkblue > li::before{
 	content: url("../img/icons/check__blue.svg");
