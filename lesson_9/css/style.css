@@ -1,0 +1,203 @@
+/* header */
+header{
+	background-color: #3056d3c6;
+	padding: 20px 0px 50px;
+}
+.hed > div{
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 0px;
+	padding: 15px;
+}
+.hed > div:nth-child(n+2){
+	background-color: rgba(255, 255, 255, 0.298);
+	border-radius: 15px;
+}
+.hed > div:last-child{
+	margin-bottom: 0px;
+}
+/* logo */
+.logo > a{
+	margin: 0px 15px;
+}
+.logo > a:first-child{
+	margin-left: 0px;
+}
+.logo > a:last-child{
+	margin-right: 0px;
+}
+/* logo */
+
+/* icons */
+.icons > span{
+	margin: 0px 15px;
+}
+.icons > span:first-child{
+	margin-left: 0px;
+}
+.icons > span:last-child{
+	margin-right: 0px;
+}
+.icons > a{
+	width: 45px;
+	height: 45px;
+	vertical-align: middle;
+}
+.icons > a > img{
+	vertical-align: middle;
+}
+.icons > span > img{
+	vertical-align: middle;
+}
+/* icons */
+
+/* button */
+.button > a{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px 25px;
+}
+.button > a:first-child{
+	margin-left: 0px;
+}
+.button > a:last-child{
+	margin-right: 0px;
+}
+/* button */
+
+/* call */
+.call > a:hover > svg path{
+	fill: #d33030;
+}
+/* call */
+
+/* network */
+.network > a{
+	margin-right: 15px;
+}
+.network > a:last-child{
+	margin-right: 0px;
+}
+.network > a:hover > svg path{
+	fill: black;
+}
+/* network */
+
+/* magic */
+.magic > div{
+	display: inline-block;
+}
+.magic > div:hover {
+	transform: rotate(-720deg);
+	transition: 3s;
+}
+.magic > div:hover > svg .blue{
+	fill: #0c0080;
+	transition: 4s;
+}
+.magic > div:hover > svg .yellow{
+	fill: yellow;
+	transition: 4s;
+}
+/* magic */
+/* header */
+
+/* main */
+main{
+	background: url("../img/jpg/block1.jpg") center / 100% 100% no-repeat;
+}
+.info{
+	max-width: 800px;
+	height: 800px;
+	overflow: auto;
+	margin: 100px 0px;
+}
+.info > div{
+	margin-bottom: 100px;
+}
+.info > div:last-child{
+	margin-bottom: 0px;
+}
+.info > div > h2{
+	display: inline-block;
+	font-size: 48px;
+	font-weight: 700;
+	margin-bottom: 55px;
+}
+.info > div > h2:hover{
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 15px;
+}
+.info > div > h2:hover::before{
+	transform: rotate(-1080deg);
+}
+.info > div > h2:hover::after{
+	transform: rotate(1080deg);
+}
+.info > div > p{
+	font-size: 24px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+.info > div > p:last-child{
+	font-weight: 500;
+	margin-bottom: 0px;
+}
+.info > div > h2::before,
+.info > div > h2::after{
+	transition: 2.8s;
+}
+.info > div > h2::before{
+	content: url("../img/svg/6.svg");
+	display: inline-block;
+	margin-right: 15px;
+}
+.info > div > h2::after{
+	content: url("../img/svg/6.svg");
+	display: inline-block;
+	margin-left: 15px;
+}
+
+/* main */
+
+/* element */
+.elements{
+	border: solid 2px rgba(0, 8, 255, 0.238);
+}
+.elements > div:nth-child(3n+1){
+	text-align: end;
+	background: #0c0080 ;
+}
+.elements > div:nth-child(3n+2){
+	text-align: start;
+	background: #61048d;
+}
+.elements > div:nth-child(3n+3){
+	text-align: center;
+	background: #9a0a7d;
+}
+
+/* element */
+
+/* footer */
+.block{
+	text-align: center;
+}
+.block > div{
+	font-size: 0px;
+	margin-bottom: 50px;
+}
+.block > div:last-child{
+	margin-bottom: 0px;
+}
+.block > div > span{
+	display: inline-block;
+	margin: 10px;
+}
+.block > div > span > img{
+	border-radius: 10px;
+}
+.girl{
+	background: url("../img/svg/elements/palkablue.svg")bottom left / contain no-repeat, url("../img/svg/elements/palkagreen.svg")top right / contain no-repeat;
+}
+/* footer */
