@@ -88,6 +88,7 @@ header{
 	display: inline-block;
 }
 .magic > div:hover {
+	cursor: pointer;
 	transform: rotate(-720deg);
 	transition: 3s;
 }
@@ -125,6 +126,7 @@ main{
 	margin-bottom: 55px;
 }
 .info > div > h2:hover{
+	cursor: default;
 	background-color: rgba(0, 0, 0, 0.2);
 	border-radius: 15px;
 }
