@@ -1,0 +1,14 @@
+@import url("reset.css");
+@import url("common.css");
+
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+[class*="__container"] {
+	margin: 0 auto;
+	max-width: 1230px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
