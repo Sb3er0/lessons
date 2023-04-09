@@ -162,7 +162,7 @@
 	height: 52px;
 	position: absolute;
 	bottom: 0px;
-	left: -200px;
+	left: 600px;
 }
 .gas-pedal:hover ~ .car__front-wheel{
 	transform: rotate(-28800deg);
@@ -181,7 +181,7 @@
 	height: 132px;
 	position: absolute;
 	bottom: 0px;
-	left: -100px;
+	left: 700px;
 }
 .reverse-pedal:hover ~ .car__front-wheel{
 	transform: rotate(28800deg);
