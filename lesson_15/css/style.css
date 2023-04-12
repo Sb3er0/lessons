@@ -1,0 +1,130 @@
+.wrapper {
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+}
+[class*="__container"] {
+	max-width: 1230px;
+	padding: 0px 15px;
+	margin: 0px auto;
+}
+.main {
+	margin: 100px auto;
+}
+/* - block-one -  */
+.block__one {
+	margin-bottom: 32px;
+}
+.text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #000000;;
+}
+.text-title {
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 140%;
+	margin-bottom: 40px;
+	text-align: center;
+
+}
+.text-subtitle {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 160%;
+	width: 518px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.single-first {
+	margin-bottom: 100px;
+}
+.double {
+	display: flex;
+	justify-content: space-between;
+	gap: 32px;
+}
+.double-text {
+	width: 36.5em;
+}
+[class*="__title"] {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 140%;
+	color: #333333;
+}
+[class*="__subtitle"] {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 160%;
+	color: #9C9C9C;
+}
+.double__title {
+	margin-bottom: 24px;
+}
+.double__subtitle > p{
+	margin-bottom: 30px;
+}
+.double__subtitle > p:last-child{
+	margin-bottom: 0px;
+}
+.double-info {
+	margin-top: 60px;
+	display: flex;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 160%;
+	color: #9C9C9C;
+}
+.double-data {
+	margin-right: 80px;
+}
+.double-img {
+	width: 36.5em;
+}
+img:hover{
+	transform: scale(1.01);
+	transition: 0.8s;
+}
+/* - block-one -  */
+
+/* - block-two -  */
+
+
+.achievement {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #000000;
+	text-transform: uppercase;
+	display: flex;
+	gap: 26px;
+	margin-bottom: 40px;
+}
+.achievement::after{
+	content: "";
+	width: 465px;
+	border-bottom: 2px solid #000;
+	align-self: center;
+}
+
+.item__block {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+.item__block:last-child{
+	margin-bottom: 0px;
+}
+
+.item__text {
+	flex: 0 1 340px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-self: center;
+}
+
+
+/* - block-two -  */
