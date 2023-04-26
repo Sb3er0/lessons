@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+img{
+	vertical-align: top;
+	max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+input,
+button,
+textarea {
+   font-weight: inherit;
+   font-size: inherit;
+   color: inherit;
+   font-family: inherit;
+	border: inherit;
+}
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	cursor: pointer;
+}
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	line-height: 1;
+}
+.wrapper {
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+}
+[class*="__container"] {
+	max-width: 730px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.select{
+	position: relative;
+}
+.opacity{
+	opacity: 0;
+}

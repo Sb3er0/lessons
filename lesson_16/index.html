@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Oswald:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 16</title>
+</head>
+
+<body>
+<div class="wrapper">
+	<header class="header"></header>
+	<main class="main">
+		<div class="main__container">
+			<div class="billing-details">
+				<div class="billing-details__title">Billing Details</div>
+				<form class="billing-details__form form" action="#"  method="post" enctype="multipart/form-data">
+					<div class="form__line">
+						<input class="form__input active" required="" autocomplete="off" type="text" name="firstname" placeholder="First Name *">
+					</div>
+					<div class="form__line">
+						<input class="form__input" required="" autocomplete="off" type="text" name="lastname" placeholder="Last Name *">
+					</div>
+					<div class="form__line">
+						<input class="form__input" required="" autocomplete="off" type="text" name="address" placeholder="Address *">
+					</div>
+					<div class="form__line">
+						<input class="form__input" autocomplete="off" type="text" name="addressline2" placeholder="Address Line 2">
+					</div>
+					<div class="form__line select">
+						<select class="form__list" required="" name="list">
+							<option value="" disabled="" selected="">Country *</option>
+							<option value="Germany">Germany</option>
+							<option value="Gothem" >Gothem</option>
+							<option value="Poland">Poland</option>
+							<option value="Ukraine">Ukraine</option>
+						</select>
+					</div>
+					<div class="form__line">
+						<input class="form__input" required="" autocomplete="off" type="text" name="city" placeholder="City/Town *">
+					</div>
+					<div class="form__line">
+						<input class="form__input" required="" autocomplete="off" type="tel" name="postcode-one" placeholder="Postcode / ZIP *">
+					</div>
+					<div class="form__line">
+						<input class="form__input" required="" autocomplete="off" type="tel" name="phone-one" minlength="10" placeholder="Phone *">
+					</div>
+					<div class="form__line">
+						<input class="form__input"  autocomplete="off" type="tel" name="postcode-two" placeholder="Postcode / ZIP">
+					</div>
+					<div class="form__line">
+						<input class="form__input" autocomplete="off" type="tel" name="phone-two" placeholder="Phone">
+					</div>
+					<div class="form__textarea">
+						<textarea class="form__area" name="additional" placeholder="Additional information" maxlength="800"></textarea>
+					</div>
+					<div class="form__checkbox checkbox">
+						<div class="checkbox-one">
+							<input id="box-1" class="form__box" checked="" type="checkbox">
+							<label class="form__label" for="box-1">Create Account</label>
+						</div>
+						<div class="checkbox-two">
+							<input id="box-2" class="form__box" type="checkbox">
+							<label class="form__label" for="box-2">Ship to a different address?</label>
+						</div>
+					</div>
+					<div class="form__coupon coupon">
+						<div class="coupon__title">Apply Coupon to get discount!</div>
+						<div class="coupon__block">
+							<div class="coupon__code code">
+								<input class="code__line"  autocomplete="off" type="text" name="coupon" placeholder="Coupon code">
+							</div>
+							<div class="coupon__button button">
+								<button class="button__apply-code" type="submit">Apply Code</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="shipping-address shipping">
+				<div class="shipping__title">Shipping Address</div>
+				<form class="shipping__sign-in sign-in" action="#"  method="post" enctype="multipart/form-data">
+					<div class="sign-in__line">
+						<label class="sign-in__label important" for="email">Email Address</label>
+						<input class="sign-in__input" id="email" type="email" autocomplete="off" name="email" placeholder="roni_cost@example.com">
+					</div>
+					<div class="sign-in__line">
+						<label class="sign-in__label" for="password">Password</label>
+						<input class="sign-in__input" id="password" type="password" autocomplete="off" name="password" placeholder="***************">
+					</div>
+					<div class="sign-in__line">
+						<label class="sign-in__label" for="zip">Zip/Postal Code</label>
+						<input class="sign-in__input" id="zip" type="text" autocomplete="off" name="zip">
+					</div>
+					<div class="sign-in__info">
+						<p class="sign-in__text">
+							You already have an account with us. Sign in or continue as guest.
+						</p>
+					</div>
+					<div class="sign-in__button">
+						<button class="sign-in__login">login</button>
+						<a href="#" class="sign-in__link">Forgot Your Password?</a>
+					</div>
+				</form>
+				<form class="shipping__form" action="#"  method="post" enctype="multipart/form-data">
+					<div class="shipping__form-line">
+						<label class="shipping__form-label important" for="firstname">First Name</label>
+						<input class="shipping__form-input" id="firstname" type="text" autocomplete="off" name="first-name" required="">
+					</div>
+					<div class="shipping__form-line">
+						<label class="shipping__form-label important" for="lastname">Last Name</label>
+						<input class="shipping__form-input" id="lastname" type="text" autocomplete="off" name="last-name" required="">
+					</div>
+					<div class="shipping__form-line">
+						<label class="shipping__form-label" for="company">Company</label>
+						<input class="shipping__form-input" id="company" type="text" autocomplete="off" name="company">
+					</div>
+					<div class="shipping__form-line">
+						<label class="shipping__form-label important" for="streetaddress">Street Address</label>
+						<input class="shipping__form-input" id="streetaddress" type="text" autocomplete="off" name="street-address" required="">
+					</div>
+					<div class="shipping__form-line">
+						<label class="shipping__form-label opacity" for="streetaddress-1">Street Address</label>
+						<input class="shipping__form-input" id="streetaddress-1" type="text" autocomplete="off" name="street-address" >
+					</div>
+					<div class="shipping__form-line">
+						<label class="shipping__form-label opacity" for="streetaddress-2">Street Address</label>
+						<input class="shipping__form-input" id="streetaddress-2" type="text" autocomplete="off" name="street-address" >
+					</div>
+					<div class="shipping__form-line">
+						<label class="shipping__form-label important" for="country">Country</label>
+						<input class="shipping__form-input" id="country" type="text" autocomplete="off" name="country" required="">
+					</div>
+					<div class="shipping__form-line select">
+						<label class="shipping__form-label important" for="state">State/Province</label>
+						<select class="shipping__form-input text-select" id="state" autocomplete="off" name="state" required="">
+							<option value="" disabled="" selected="">Please select a region, state or province</option>
+							<option value="Germany">Germany</option>
+							<option value="Gothem">Gothem</option>
+							<option value="Poland">Poland</option>
+							<option value="Ukraine">Ukraine</option>
+						</select>
+					</div>
+					<div class="shipping-methods">
+						<div class="shipping-methods__title">Shipping Methods</div>
+						<div class="shipping-methods__items radio">
+							<div class="radio__block">
+								<div class="radio__box">
+									<input class="radio__input" type="radio" id="radio-5" name="radio" checked="">
+									<label class="radio__label" for="radio-5">$5.00</label>
+								</div>
+								<div class="radio__text">Fixed</div>
+								<div class="radio__text">Flat Rate</div>
+							</div>
+							<div class="radio__block">
+								<div class="radio__box">
+									<input class="radio__input" type="radio" id="radio-10" name="radio">
+									<label class="radio__label" for="radio-10">$10.00</label>
+								</div>
+								<div class="radio__text">Table Rate</div>
+								<div class="radio__text">Best Way</div>
+							</div>
+						</div>
+						<div class="shipping-methods__navigation navigation">
+							<button class="navigation__next" type="submit">next</button>
+							<button class="navigation__back" type="reset">back</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</main>
+	<footer class="footer"></footer>
+</div>
+
+</body>
+</html>
