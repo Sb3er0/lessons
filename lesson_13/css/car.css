@@ -1,0 +1,423 @@
+.car{
+	width: 1500px;
+	height: 610px;
+	margin: 0 auto;
+	position: absolute;
+	bottom: 45px;
+	left: 200px;
+	z-index: 10;
+	animation: car 10s ease;
+}
+.car__machine-outline {
+	background: url('../img/car/machine-outline.svg') 0 0 no-repeat;
+	width: 1400px;
+	height: 368px;
+	position: absolute;
+	z-index: 50;
+	top: 200px;
+	left: 60px;
+}
+.car__front-of-the-car {
+	background: url('../img/car/front-of-the-car.svg') 0 0 no-repeat;
+	width: 520px;
+	height: 250px;
+	position: absolute;
+	top: 311px;
+	left: 60px;
+	z-index: 10;
+}
+.car__front-lower-headlight-radiator {
+	background: url('../img/car/front-lower-headlight-radiator.svg') 0 0 no-repeat;
+	width: 80px;
+	height: 62px;
+	position: absolute;
+	top: 476px;
+	left: 88px;
+	z-index: 5;
+}
+.car__top-rear-of-the-machine {
+	background: url('../img/car/top+rear-of-the-machine.svg') 0 0 no-repeat;
+	width: 900px;
+	height: 350px;
+	position: absolute;
+	top: 200px;
+	left: 560px;
+	z-index: 10;
+}
+.car__windshield {
+	background: url('../img/car/Windshield.svg') 0 0 no-repeat;
+	width: 205px;
+	height: 105px;
+	position: absolute;
+	top: 219px;
+	left: 522px;
+}
+.car__rear-glass {
+	background: url('../img/car/rear-glass.svg') 0 0 no-repeat;
+	width: 245px;
+	height: 69px;
+	position: absolute;
+	top: 222px;
+	left: 1037px;
+}
+.car__door {
+	background: url('../img/car/door.svg') 0 0 no-repeat;
+	width: 445px;
+	height: 220px;
+	position: absolute;
+	top: 312px;
+	left: 534px;
+	z-index: 10;
+}
+.car__door-shadow {
+	background: url('../img/car/door-shadow.svg') 0 0 no-repeat;
+	width: 485px;
+	height: 35px;
+	position: absolute;
+	top: 521px;
+	left: 492px;
+}
+.car__side-sill {
+	background: url('../img/car/side-sill.svg') 0 0 no-repeat;
+	width: 600px;
+	height: 25px;
+	position: absolute;
+	top: 542px;
+	left: 444px;
+}
+.car__door-knob {
+	background: url('../img/car/door-knob.svg') 0 0 no-repeat;
+	width: 80px;
+	height: 22px;
+	position: absolute;
+	top: 350px;
+	left: 868px;
+	z-index: 11;
+}
+.car__side-mirror {
+	background: url('../img/car/side-mirror.svg') 0 0 no-repeat;
+	width: 34px;
+	height: 42px;
+	position: absolute;
+	top: 292px;
+	left: 620px;
+	z-index: 1;
+}
+.car__exhaust-pipe {
+	background: url('../img/car/exhaust-pipe.svg') 0 0 no-repeat;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 501px;
+	left: 1429px;
+}
+.car__window {
+	width: 550px;
+	height: 100px;
+	position: absolute;
+	top: 221px;
+	left: 582px;
+}
+.car__window-side {
+	background: url('../img/car/side-window.svg') 0 0 no-repeat;
+	width: 546px;
+	height: 100px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+}
+.car__window-bolt {
+	background: url('../img/car/bolt.svg') 0 0 no-repeat;
+	width: 155px;
+	height: 66px;
+	position: absolute;
+	top: 19px;
+	left: 375px;
+}
+.car__window-glass {
+	width: 375px;
+	height: 90px;
+	position: absolute;
+	top: 5px;
+	left: 13px;
+	background: #D5DDDD;
+	transform: skew(-20deg) rotate(-1deg);
+	border-radius: 72% 0% 0% 0% / 100% 100% 0% 0%;
+}
+.car__front-wheel {
+	width: 215px;
+	height: 215px;
+	position: absolute;
+	top: 389px;
+	left: 211px;
+	z-index: 1;
+	animation: wheels 8s infinite linear;
+}
+.car__front-wheel-circle-1 {
+	width: 215px;
+	height: 215px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: radial-gradient(50% 50% at 50% 50%, #282828 79.65%, #363635 87.32%, #363635 93.12%, #282828 99.34%);
+	border-radius: 100%;
+}
+.car__front-wheel-circle-2 {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 32px;
+	left: 32px;
+	background: #050506;
+	border-radius: 100%;
+}
+.car__front-wheel-circle-3 {
+	width: 140px;
+	height: 140px;
+	position: absolute;
+	top: 37px;
+	left: 37px;
+	background: #1A1A1A;
+	border-radius: 100%;
+}
+.car__front-wheel-circle-4 {
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	top: 96px;
+	left: 96px;
+	background: radial-gradient(50% 50% at 50% 50%, #000000 0%, rgba(0, 0, 0, 0.7) 66.15%, #000000 97.35%);
+	border-radius: 100%;
+}
+.car__front-wheel-disk {
+	background: url('../img/car/disk.svg') 0 0 no-repeat;
+	width: 168px;
+	height: 168px;
+	position: absolute;
+	top: 24px;
+	left: 24px;
+}
+.car__rear-wheel {
+		width: 215px;
+	height: 215px;
+	position: absolute;
+	top: 389px;
+	left: 1062px;
+	z-index: 1;
+	animation: wheels 8s infinite linear;
+}
+.car__rear-wheel-circle-1 {
+	width: 215px;
+	height: 215px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: radial-gradient(50% 50% at 50% 50%, #282828 79.65%, #363635 87.32%, #363635 93.12%, #282828 99.34%);
+	border-radius: 100%;
+}
+.car__rear-wheel-circle-2 {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 32px;
+	left: 32px;
+	background: #050506;
+	border-radius: 100%;
+}
+.car__rear-wheel-circle-3 {
+	width: 140px;
+	height: 140px;
+	position: absolute;
+	top: 37px;
+	left: 37px;
+	background: #1A1A1A;
+	border-radius: 100%;
+}
+.car__rear-wheel-circle-4 {
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	top: 96px;
+	left: 96px;
+	background: radial-gradient(50% 50% at 50% 50%, #000000 0%, rgba(0, 0, 0, 0.7) 66.15%, #000000 97.35%);
+	border-radius: 100%;
+}
+.car__rear-wheel-disk {
+	background: url('../img/car/disk.svg') 0 0 no-repeat;
+	width: 168px;
+	height: 168px;
+	position: absolute;
+	top: 24px;
+	left: 24px;
+}
+
+.car__front-wheel-shadow {
+	width: 248px;
+	height: 172px;
+	position: absolute;
+	top: 400px;
+	left: 198px;
+	z-index: 1;
+}
+.car__front-wheel-shadow-1 {
+	background: url('../img/car/front-wheel-shadow/1.svg') 0 0 no-repeat;
+	width: 75px;
+	height: 155px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+}
+.car__front-wheel-shadow-2 {
+	background: url('../img/car/front-wheel-shadow/2.svg') 0 0 no-repeat;
+	width: 85px;
+	height: 68px;
+	position: absolute;
+	top: -8px;
+	left: 144px;
+	z-index: 1;
+}
+.car__front-wheel-shadow-3 {
+	background: url('../img/car/front-wheel-shadow/3.svg') 0 0 no-repeat;
+	width: 14px;
+	height: 18px;
+	position: absolute;
+	top: 145px;
+	left: 232px;
+	z-index: 1;
+}
+.car__rear-wheel-shadow {
+	width: 254px;
+	height: 168px;
+	position: absolute;
+	top: 396px;
+	left: 1039px;
+	z-index: 1;
+}
+.car__rear-wheel-shadow-1 {
+	background: url('../img/car/rear-wheel-shadow/1.svg') 0 0 no-repeat;
+	width: 18px;
+	height: 35px;
+	position: absolute;
+	top: 129px;
+	left: 0px;
+}
+.car__rear-wheel-shadow-2 {
+	background: url('../img/car/rear-wheel-shadow/2.svg') 0 0 no-repeat;
+	width: 115px;
+	height: 83px;
+	position: absolute;
+	top: -4px;
+	left: 9px;
+	transform: rotate(-3deg);
+}
+.car__rear-wheel-shadow-3 {
+	background: url('../img/car/rear-wheel-shadow/3.svg') 0 0 no-repeat;
+	width: 119px;
+	height: 152px;
+	position: absolute;
+	top: -4px;
+	left: 135px;
+}
+.car__front-headlight {
+	width: 110px;
+	height: 40px;
+	position: absolute;
+	top: 382px;
+	left: 114px;
+	border-radius: 100% 0% 100% 13% / 20% 0% 100% 100%;
+	background: linear-gradient(150.48deg, #D3DCDC 45.98%, #B6C4C4 49.78%);
+	transform: rotate(-6deg);
+}
+.car__front-headlight-1 {
+	width: 110px;
+	height: 40px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: linear-gradient(265.33deg, rgba(0, 0, 0, 0) -3.42%, rgba(0, 0, 0, 0.5) 96.05%);
+	animation: front-headlight-1 120s infinite
+}
+.car__front-headlight-2 {
+	width: 15px;
+	height: 23px;
+	position: absolute;
+	top: 9px;
+	left: 10px;
+	background: linear-gradient(90deg, rgba(200, 200, 200, 0.25) 37.11%, rgba(255, 255, 255, 0) 62.8%);
+	transform: skew(10deg);
+}
+.car__front-headlight-3 {
+	width: 15px;
+	height: 23px;
+	position: absolute;
+	top: 9px;
+	left: 20px;
+	background: linear-gradient(90deg, rgba(225, 225, 225, 0.25) 37.46%, rgba(217, 217, 217, 0) 63.15%);
+	transform: skew(10deg);
+}
+.car__front-headlight-4 {
+	width: 15px;
+	height: 23px;
+	position: absolute;
+	top: 9px;
+	left: 30px;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.25) 37.33%, rgba(247, 255, 255, 0) 62.15%);
+	transform: skew(10deg);
+}
+.car__rear-lower-headlight {
+	width: 63px;
+	height: 16px;
+	position: absolute;
+	top: 475px;
+	left: 1333px;
+	z-index: 1;
+}
+.car__rlh-headlight {
+	width: 63px;
+	height: 10px;
+	position: absolute;
+	top: 4px;
+	left: 0px;
+	background: #B81823;
+	border-radius: 0% 0% 47% 36% / 10% 0% 100% 100%;
+	transform: rotate(-5deg);
+}
+.car__rlh-circuit {
+	background: url('../img/car/rear-lower-headlight-circuit.svg') 0 0 no-repeat;
+	width: 63px;
+	height: 16px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.car__rear-top-light {
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	top: 361px;
+	left: 1393px;
+}
+.car__rtl-stop {
+	width: 55px;
+	height: 14px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: #B81823;
+	transform: rotate(52deg);
+	border-radius: 10% 10% 16% 25% / 0% 4% 60% 100%;
+	z-index: 1;
+}
+.car__rtl-back {
+	width: 57px;
+	height: 9px;
+	position: absolute;
+	top: -6px;
+	left: 3px;
+	background: #D06F76;
+	transform: rotate(52deg);
+	border-radius: 10% 56% 20% 25% / 0% 30% 32% 100%;
+}
+

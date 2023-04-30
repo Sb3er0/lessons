@@ -1,0 +1,82 @@
+.wrapper {
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+}
+[class*="__container"] {
+	max-width: 1530px;
+	margin: 0px auto;
+}
+.sky {
+	position: relative;
+	height: 947px;
+}
+.sky__moon {
+	position: absolute;
+	top: 50px;
+	left: 150px;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	fill: #F6C744;
+	animation: storkes 120s ease infinite;
+	z-index: 5;
+}
+.sky__moon::before {
+	content: "";
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 0;
+	animation: move 120s infinite,night-and-day 120s infinite;
+}
+
+.sky__small,
+.sky__average,
+.sky__big {
+	fill: #ffffff;
+	filter: blur(1px);
+	border-radius: 50%;
+	position: absolute;
+	animation: star 120s infinite;
+}
+
+.sky__small{
+	position: absolute;
+	width: 4px;
+	height: 4px;
+}
+.sky__average{
+	position: absolute;
+	width: 6px;
+	height: 6px;
+}
+.sky__big{
+	position: absolute;
+	width: 9px;
+	height: 9px;
+}
+.footer {
+	position: absolute;
+	bottom: 0px;
+	left: -50%;
+	width: 200%;
+	height: 500px;
+	perspective: 500px;
+
+}
+.footer__doroga {
+	width: 200%;
+	height: 500px;
+	background: #4D4D4D;
+	transform: rotateX(45deg);
+}
+
+.doroga__line {
+	width: 200px;
+	height: 30px;
+	background: #CBA31E;
+	filter: blur(2.5px);
+	position: absolute;
+}

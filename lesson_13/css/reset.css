@@ -1,0 +1,458 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+img{
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+}
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	line-height: 1;
+	/* background: #0122b7; */
+	animation: night-and-day 120s infinite;
+}
+
+@keyframes night-and-day {
+	from, 0%, 100%, to {
+		background-color: rgb(247, 249, 196);
+	}
+	60% {
+		background: #0122b7;
+	}
+}
+
+@keyframes move {
+	from, 5% {
+		transform: translateX(100%);
+	}
+	30%,60% {
+		transform: rotate(-20deg) translateX(20%) ;
+	}
+	80%,to {
+		transform: translateX(100%);
+	}
+}
+
+@keyframes star {
+	from, 15%, 100%{
+		opacity: 0;
+		
+	}
+	30%, 50%{
+		opacity: 1;
+	}
+}
+@keyframes cloud-0 {
+	from, 0%{
+		top: 160px;
+		left: -100%;
+	}
+	100%{
+		top: 160px;
+		left: 140%;
+	}
+}
+@keyframes cloud-1 {
+	from, 0%{
+		top: 10px;
+		left: -100%;
+	}
+	100%{
+		top: 10px;
+		left: 140%;
+	}
+}
+@keyframes cloud-2 {
+	from, 0%{
+		top: 50px;
+		left: -100%;
+	}
+	100%{
+		top: 50px;
+		left: 140%;
+	}
+}
+@keyframes cloud-3 {
+	from, 0%{
+		top: 175px;
+		right: -100%;
+	}
+	100%{
+		top: 175px;
+		right: 140%;
+	}
+}
+@keyframes cloud-4 {
+	from, 0%{
+		top: 75px;
+		left: -100%;
+	}
+	100%{
+		top: 75px;
+		left: 140%;
+	}
+}
+@keyframes cloud-5 {
+	from, 0%{
+		top: 100px;
+		right: -100%;
+	}
+	100%{
+		top: 100px;
+		right: 140%;
+	}
+}
+@keyframes cloud-6 {
+	from, 0%{
+		top: 0px;
+		right: -100%;
+	}
+	100%{
+		top: 0px;
+		right: 140%;
+	}
+}
+@keyframes line-1 {
+	from, 0%{
+		top: 275px;
+		left: 2800px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-2 {
+	from, 0%{
+		top: 275px;
+		left: 2570px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-3 {
+	from, 0%{
+		top: 275px;
+		left: 2340px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-4 {
+	from, 0%{
+		top: 275px;
+		left: 2110px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-5 {
+	from, 0%{
+		top: 275px;
+		left: 1880px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-6 {
+	from, 0%{
+		top: 275px;
+		left: 1650px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-7 {
+	from, 0%{
+		top: 275px;
+		left: 1420px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-8 {
+	from, 0%{
+		top: 275px;
+		left: 1190px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-9 {
+	from, 0%{
+		top: 275px;
+		left: 960px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-10 {
+	from, 0%{
+		top: 275px;
+		left: 730px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-11 {
+	from, 0%{
+		top: 275px;
+		left: 500px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-12 {
+	from, 0%{
+		top: 275px;
+		left: 500px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-13 {
+	from, 0%{
+		top: 275px;
+		left: 500px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-14 {
+	from, 0%{
+		top: 275px;
+		left: 500px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-15 {
+	from, 0%{
+		top: 275px;
+		left: 500px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-16 {
+	from, 0%{
+		top: 275px;
+		left: 500px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-17 {
+	from, 0%{
+		top: 275px;
+		left: 500px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-18 {
+	from, 0%{
+		top: 275px;
+		left: 500px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-19 {
+	from, 0%{
+		top: 275px;
+		left: 500px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-20{
+	from, 0%{
+		top: 275px;
+		left: 500px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-21 {
+	from, 0%{
+		top: 275px;
+		left: 500px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-22 {
+	from, 0%{
+		top: 275px;
+		left: 500px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-23 {
+	from, 0%{
+		top: 275px;
+		left: 500px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-24 {
+	from, 0%{
+		top: 275px;
+		left: 500px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-25 {
+	from, 0%{
+		top: 275px;
+		left: 500px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-26 {
+	from, 0%{
+		top: 275px;
+		left: 500px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-27 {
+	from, 0%{
+		top: 275px;
+		left: 500px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes line-28 {
+	from, 0%{
+		top: 275px;
+		left: 500px;
+	}
+	100%{
+		top: 275px;
+		left: 3200px;
+	}
+}
+@keyframes car {
+	from, 0%{
+		bottom: 45px;
+		left: 3000px;
+	}
+	100%{
+		bottom: 45px;
+		left: 200px;
+	}
+}
+@keyframes wheels {
+	from, 0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(-1440deg);
+	}
+}
+@keyframes front-headlight-1 {
+	from, 0%{
+		background: linear-gradient(265.33deg, rgba(0, 0, 0, 0) -3.42%, rgba(0, 0, 0, 0.5) 96.05%);
+	}
+	40%,60%{
+		background: linear-gradient(265.33deg, rgba(0, 0, 0, 0) -3.42%, rgba(0, 195, 255, 0.41) 96.05%);
+	}
+	100%{
+		background: linear-gradient(265.33deg, rgba(0, 0, 0, 0) -3.42%, rgba(0, 0, 0, 0.5) 96.05%);
+	}
+	
+}

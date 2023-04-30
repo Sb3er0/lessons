@@ -1,0 +1,36 @@
+.sky__cloud {
+	position: absolute;
+	width: 300px;
+	height: 200px;
+}
+.cloud-0 {
+	animation: cloud-0 37s linear infinite alternate;
+	z-index: 6;
+}
+.cloud-1 {
+	animation: cloud-1 33s linear infinite alternate;
+	z-index: 9;
+}
+.cloud-2 {
+	animation: cloud-2 17s linear infinite alternate;
+	z-index: 11;
+}
+.cloud-3 {
+	animation: cloud-3 23s linear infinite alternate;
+	z-index: 8;
+}
+.cloud-4 {
+	animation: cloud-4 28s linear infinite alternate;
+	z-index: 12;
+}
+.cloud-5 {
+	animation: cloud-5 28s linear infinite alternate ;
+	z-index: 10;
+}
+.cloud-6 {
+	animation: cloud-6 39s linear infinite alternate;
+	z-index: 7;
+}
+.sky__cloud:hover{
+	animation-play-state: paused;
+}
