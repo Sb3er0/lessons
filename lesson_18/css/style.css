@@ -1025,6 +1025,9 @@
 	.design__card-data.margin{
 		margin-bottom: 10px;
 	}
+	.design__card-img{
+		filter: grayscale(0);
+	}
 }
 @media (max-width:743.98px){
 	.design__card{
