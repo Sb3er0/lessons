@@ -33,7 +33,7 @@
 	text-align: center;
 	color: #F8F9FA;
 	width: 200px;
-	height: 60px;
+	min-height: 60px;
 	padding: 17px;
 	background: rgb(191, 29, 29);
 	border-radius: 10px;
