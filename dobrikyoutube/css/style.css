@@ -518,9 +518,7 @@ button:focus-visible {
   perspective: 500px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  width: 100%;
-  max-width: 360px;
-  height: 200px
+  width: 100%
 }
 .services__card {
   width: 100%;
@@ -540,7 +538,6 @@ button:focus-visible {
   left: 0;
   display: flex;
   border-radius: 20px;
-  padding: 15px;
   color: var(--white);
   font-weight: 600;
   font-family: "Roboto Flex";
@@ -573,15 +570,6 @@ button:focus-visible {
   font-family: "Roboto Flex";
   text-transform: uppercase
 }
-.services__title {
-  display: inline-block;
-  color: var(--blue);
-  background-color: var(--white);
-  padding: 5px 10px;
-  border-radius: 25px;
-  font-size: .9375rem;
-  font-weight: 800
-}
 .services__exercise {
   text-align: start
 }
@@ -611,8 +599,6 @@ button:focus-visible {
   background-color: var(--blue)
 }
 .services__link {
-  width: 100%;
-  height: 30px;
   text-align: center;
   align-items: center;
   display: flex;
@@ -930,6 +916,12 @@ button:focus-visible {
     height: 3.75rem
   }
 }
+@media (min-width:30em) {
+  .services__back,
+  .services__front {
+    padding: .9375rem
+  }
+}
 @media (min-width:62em) {
   .header__block {
     height: 6.25rem
@@ -1071,6 +1063,10 @@ button:focus-visible {
   .services__item {
     height: 8.75rem
   }
+  .services__back,
+  .services__front {
+    padding: .3125rem
+  }
   .services__type {
     font-size: .8125rem
   }
@@ -1078,10 +1074,10 @@ button:focus-visible {
     font-size: .8125rem
   }
   .services__description {
-    font-size: .875rem
+    font-size: .8125rem
   }
   .services__link {
-    font-size: .875rem
+    font-size: .8125rem
   }
   .contacts__item {
     max-width: 8.125rem
@@ -1137,10 +1133,10 @@ button:focus-visible {
     font-size: clamp(1rem ,.9404761905rem + .2976190476vw ,1.125rem)
   }
   .services__description {
-    font-size: clamp(.875rem ,.8154761905rem + .2976190476vw ,1rem)
+    font-size: clamp(.8125rem ,.7232142857rem + .4464285714vw ,1rem)
   }
   .services__link {
-    font-size: clamp(.875rem ,.8154761905rem + .2976190476vw ,1rem)
+    font-size: clamp(.8125rem ,.7232142857rem + .4464285714vw ,1rem)
   }
   .contacts__link {
     width: clamp(3.75rem ,1.8154761905rem + 9.6726190476vw ,7.8125rem)
@@ -1225,6 +1221,12 @@ button:focus-visible {
 @media (min-width:30em)and (max-width:47.9375em) {
   .services__list {
     gap: clamp(.625rem ,-.9429442509rem + 5.2264808362vw ,1.5625rem)
+  }
+}
+@media (min-width:20em)and (max-width:30em) {
+  .services__back,
+  .services__front {
+    padding: clamp(.3125rem ,-.9375rem + 6.25vw ,.9375rem)
   }
 }
 @media (min-width:47.9375em)and (max-width:62em) {
