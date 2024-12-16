@@ -629,10 +629,6 @@ button:focus-visible {
   background-color: var(--white);
   border: 2px solid var(--white)
 }
-.services__item:hover .services__card {
-  -webkit-transform: rotateY(-180deg);
-  transform: rotateY(-180deg)
-}
 .page__contacts {
   background-color: var(--blue)
 }
@@ -963,6 +959,12 @@ button:focus-visible {
     font-size: 1.375rem
   }
 }
+@media (min-width:992px) {
+  .services__item:hover .services__card {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg)
+  }
+}
 @media (max-width:62em) {
   .home__buttonlink {
     width: 2.5rem
@@ -979,6 +981,10 @@ button:focus-visible {
     flex-direction: column;
     align-items: center;
     gap: 10px
+  }
+  .services__item:focus .services__card {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg)
   }
 }
 @media (max-width:991.98px)and (max-width:20em) {
