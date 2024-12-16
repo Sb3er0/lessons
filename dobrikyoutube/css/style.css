@@ -454,6 +454,9 @@ button:focus-visible {
   align-items: center;
   transition: all ease .3s
 }
+.home__buttonlink:hover {
+  cursor: pointer
+}
 .home__buttonlink:hover .home__buttonspan {
   transition: all ease .3s
 }
