@@ -454,9 +454,6 @@ button:focus-visible {
   align-items: center;
   transition: all ease .3s
 }
-.home__buttonlink:hover {
-	cursor: pointer;
- }
 .home__buttonlink:hover .home__buttonspan {
   transition: all ease .3s
 }
@@ -595,7 +592,6 @@ button:focus-visible {
   background-color: var(--blue);
   padding: 5px 10px;
   border-radius: 25px;
-  font-size: .875rem;
   font-weight: 800
 }
 .services__name {
@@ -604,7 +600,6 @@ button:focus-visible {
   background-color: var(--white);
   padding: 5px 10px;
   border-radius: 25px;
-  font-size: .875rem;
   font-weight: 800
 }
 .services__back {
@@ -904,6 +899,12 @@ button:focus-visible {
   .footer__navigation {
     font-size: 1rem
   }
+  .services__type {
+    font-size: .875rem
+  }
+  .services__name {
+    font-size: .875rem
+  }
   .contacts__item {
     max-width: 18.75rem
   }
@@ -1046,6 +1047,12 @@ button:focus-visible {
   .page__services {
     padding-bottom: 1.5625rem
   }
+  .services__type {
+    font-size: .75rem
+  }
+  .services__name {
+    font-size: .75rem
+  }
   .services__description {
     font-size: .875rem
   }
@@ -1128,6 +1135,12 @@ button:focus-visible {
   .footer__copyright,
   .footer__navigation {
     font-size: clamp(.875rem ,.7855145414rem + .4474272931vw ,1rem)
+  }
+  .services__type {
+    font-size: clamp(.75rem ,.6605145414rem + .4474272931vw ,.875rem)
+  }
+  .services__name {
+    font-size: clamp(.75rem ,.6605145414rem + .4474272931vw ,.875rem)
   }
   .contacts__item {
     max-width: clamp(8.125rem ,.5187360179rem + 38.0313199105vw ,18.75rem)
