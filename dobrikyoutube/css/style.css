@@ -633,10 +633,6 @@ button:focus-visible {
   -webkit-transform: rotateY(-180deg);
   transform: rotateY(-180deg)
 }
-.services__item:focus .services__card {
-  -webkit-transform: rotateY(-180deg);
-  transform: rotateY(-180deg)
-}
 .page__contacts {
   background-color: var(--blue)
 }
@@ -1048,10 +1044,10 @@ button:focus-visible {
     padding-bottom: 1.5625rem
   }
   .services__type {
-    font-size: .75rem
+    font-size: .8125rem
   }
   .services__name {
-    font-size: .75rem
+    font-size: .8125rem
   }
   .services__description {
     font-size: .875rem
@@ -1137,10 +1133,10 @@ button:focus-visible {
     font-size: clamp(.875rem ,.7855145414rem + .4474272931vw ,1rem)
   }
   .services__type {
-    font-size: clamp(.75rem ,.6605145414rem + .4474272931vw ,.875rem)
+    font-size: clamp(.8125rem ,.7677572707rem + .2237136465vw ,.875rem)
   }
   .services__name {
-    font-size: clamp(.75rem ,.6605145414rem + .4474272931vw ,.875rem)
+    font-size: clamp(.8125rem ,.7677572707rem + .2237136465vw ,.875rem)
   }
   .contacts__item {
     max-width: clamp(8.125rem ,.5187360179rem + 38.0313199105vw ,18.75rem)
