@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Задача №4</title>
+	<script>
+		//Задача №4 - С клавиатуры вводится возраст ребёнка. Вывести на экран через сколько лет он будет посещать детский сад, пойдёт в школу, закончит школу, поступит и закончит учебное заведение.
+
+		//Первый товар
+		let age = prompt(`Введите возраст Вашего ребёнка:`, 5);
+
+
+
+		//Детский сад
+		const kindergartenStart = 3;
+		const kindergarten_studies = 4;
+		const kindergartenEnd = 7;
+		//Школа
+		const schoolStart = 7;
+		const school_studies_9 = 9;
+		const school_studies_11 = 11;
+		//Среднее специальное учебное заведение
+		const college_studies = 4;
+		const university_studies = 6;
+
+		//Расчёты
+		//Детский сад
+		let agekindergartenStart = Math.max(3 - age, 0);
+		let agekindergartenEnd = Math.max(Math.min(kindergartenEnd - age, kindergarten_studies), 0);
+		//Школа
+		let ageschoolStart = Math.max(schoolStart - age, 0);
+		let ageschoolEnd9 = Math.max(schoolStart + school_studies_9 - age, 0);
+		let ageschoolEnd11 = Math.max(schoolStart + school_studies_11 - age, 0);
+		//Среднее специальное учебное заведение
+		let agecollegeStart9 = Math.max(schoolStart + school_studies_9 - age, 0);
+		let agecollegeEnd9 = Math.max(schoolStart + school_studies_9 + college_studies - age, 0);
+		let agecollegeStart11 = Math.max(schoolStart + school_studies_11 - age, 0);
+		let agecollegeEnd11 = Math.max(schoolStart + school_studies_11 + college_studies - age, 0);
+		//Высшее учебное заведение
+		let ageuniversityStart11 = Math.max(schoolStart + school_studies_11 + college_studies - age, 0);
+		let ageuniversityEnd11 = Math.max(schoolStart + school_studies_11 + college_studies + university_studies - age, 0);
+		let ageuniversityStartCollege = Math.max(schoolStart + school_studies_9 + college_studies - age, 0);
+		let ageuniversityEndCollege = Math.max(schoolStart + school_studies_9 + college_studies + university_studies - age, 0);
+
+
+		//Вывод результатов
+		document.write(`
+			<h2>Возраст Вашего ребёнка: ${age} лет.</h2>
+			<h2>Детский сад:</h2>
+			<h4>Детский сад посещают дети от 3 до 7 лет. (В этом заведении учаться: ${kindergarten_studies} года.)</h4>
+			<ul>
+				<li>Ваш ребёнок будет посещать детский сад через ${agekindergartenStart} год/а.</li>
+				<li>Ваш ребёнок будет посещать детский сад ещё ${agekindergartenEnd} год/а.</li>
+			</ul>
+			<br>
+			<h2>Школа:</h2>
+			<h4>Школу посещают дети от 7 до 16-18 лет. (В этом заведении учаться: ${school_studies_9} лет - 9 классов, ${school_studies_11} лет - 11 классов.)</h4>
+			<ul>
+				<li>Ваш ребёнок пойдёт в школу через ${ageschoolStart} лет.</li>
+				<li>Ваш ребёнок закончит школу 9 классов через ${ageschoolEnd9} лет.</li>
+				<li>Ваш ребёнок закончит школу 11 классов через ${ageschoolEnd11} лет.</li>
+			</ul>
+			<br>
+			<h2>Среднее специальное учебное заведение:</h2>
+			<h4>Среднее специальное учебное заведение посещают люди после 9 или 11 классов школы. (В этом заведении учаться: ${college_studies} года.)</h4>
+			<ul>
+				<li>Ваш ребёнок поступит в среднее специальное учебное заведение после 9 классов через ${agecollegeStart9} лет.</li>
+				<li>Ваш ребёнок закончит среднее специальное учебное заведение после 9 классов через ${agecollegeEnd9} лет.</li>
+				<br>
+				<li>Ваш ребёнок поступит в среднее специальное учебное заведение после 11 классов через ${agecollegeStart11} лет.</li>
+				<li>Ваш ребёнок закончит среднее специальное учебное заведение после 11 классов через ${agecollegeEnd11} лет.</li>
+			</ul>
+			<br>
+			<h2>Высшее учебное заведение:</h2>
+			<h4>Высшее учебное заведение посещают люди только после среднего специального учебного заведения или после 11 классов школы. (В этом заведении учаться: ${university_studies} лет.)</h4>
+			<ul>
+				<li>Ваш ребёнок поступит в высшее учебное заведение после специального учебного заведения через ${ageuniversityStartCollege} лет.</li>
+				<li>Ваш ребёнок закончит высшее учебное заведение после специального учебного заведения через ${ageuniversityEndCollege} лет.</li>
+				<br>
+				<li>Ваш ребёнок поступит в высшее учебное заведение после 11 классов школы через ${ageuniversityStart11} лет.</li>
+				<li>Ваш ребёнок закончит высшее учебное заведение после 11 классов школы через ${ageuniversityEnd11} лет.</li>
+			</ul>
+		`);
+	</script>
+</head>
+<body></body>
+</html>
