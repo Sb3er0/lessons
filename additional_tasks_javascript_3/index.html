@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Задача №3</title>
+	<script>
+		//Задача №3 - С клавиатуры вводятся стоимость единицы и количество единиц двух товаров. Вывести на экран стоимость каждого вида товара отдельно и общую стоимость.
+
+		//Первый товар
+		let name1 = prompt(`Введите наименование первого товара:`, `Товар 1`);
+		let price1 = parseFloat(prompt(`Введите стоимость единицы первого товара:`, 30));
+		let quantity1 = parseInt(prompt(`Введите количество единиц первого товара:`, 100));
+
+		//Второй товар
+		let name2 = prompt(`Введите наименование второго товара:`, `Товар 2`);
+		let price2 = parseFloat(prompt(`Введите стоимость единицы второго товара:`, 15));
+		let quantity2 = parseInt(prompt(`Введите количество единиц второго товара:`, 100));
+
+		//Рассчет стоимости каждого вида товара и общей стоимости
+		let totalAmount1 = price1 * quantity1;
+		let totalAmount2 = price2 * quantity2;
+		let totalAmount = totalAmount1 + totalAmount2;
+
+		//Вывод результатов
+		document.write(`
+			<ul>
+				<li>Наименование товара: ${name1}</li>
+				<li>Стоимость единицы: ${price1} грн.</li>
+				<li>Стоимость за ${quantity1} шт.: ${totalAmount1} грн.</li>
+			</ul>
+			<ul>
+				<li>Наименование товара: ${name2}</li>
+				<li>Стоимость единицы: ${price2} грн.</li>
+				<li>Стоимость за ${quantity2} шт.: ${totalAmount2} грн.</li>
+			</ul>
+			<p>Общая стоимость: ${totalAmount} грн.</p>
+		`);
+	</script>
+</head>
+<body></body>
+</html>
