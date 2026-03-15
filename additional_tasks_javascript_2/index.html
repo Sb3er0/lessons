@@ -11,7 +11,7 @@
 		let c = parseFloat(prompt(`Какой прожиточный минимум в Вашем регионе?:`, 20000));
 
 		//Размер социальной помощи
-		let social_assistance = Math.max(0, Math.floor(c - b));
+		let social_assistance = Math.max(0, c - b);
 
 		//Вывод результатов
 		document.write(`
