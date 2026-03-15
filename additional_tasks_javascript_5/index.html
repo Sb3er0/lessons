@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Задача №5</title>
+	<script>
+		//Задача №5 - Определить, какую зарплату получит совместитель за выполненную работу, если ему начислено S грн, а налог составляет 20%.
+		//Ввод данных
+		let salary = parseFloat(prompt(`Введите Вашу зарплату до НДС:`, 20000));
+		//Константы
+		const vat = 20;
+		//Расчёты
+		let vatValue = salary * vat / 100;
+		document.write(`Сумма которую совместитель получит за выполненную работу после вычета НДС(${vat}%) составляет: ${salary - vatValue} грн.`);
+		console.log(`Сумма которую совместитель получит за выполненную работу после вычета НДС(${vat}%) составляет: ${salary - vatValue} грн.`);
+	</script>
+</head>
+<body></body>
+</html>
