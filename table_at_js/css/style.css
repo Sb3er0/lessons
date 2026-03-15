@@ -23,6 +23,21 @@
 	max-width: 600px;
 }
 
+.navigation {
+	display: flex;
+   gap: 15px;
+   justify-content: center;
+}
+.navigation__link {
+	padding: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+}
+.navigation__link:hover {
+	border: 1px solid rgba(0, 0, 0, 1);
+	color: rgb(0, 0, 0);
+}
+
 .item {
 	display: flex;
 	gap: 25px;
