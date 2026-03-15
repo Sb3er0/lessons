@@ -9,7 +9,13 @@
 	margin: 0px auto;
 }
 
-.header__logo {
+.header {
+	display: flex;
+	justify-content: center;
+	margin: 100px auto 50px;
+}
+
+.header__title {
 	font-size: 36px;
 	font-weight: 500;
 	margin: 25px;
