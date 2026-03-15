@@ -12,7 +12,7 @@
 .header {
 	display: flex;
 	justify-content: center;
-	margin: 100px auto 50px;
+	margin: 25px auto 25px;
 }
 
 .header__title {
@@ -29,14 +29,17 @@
    justify-content: center;
 	flex-wrap: wrap;
 }
-.navigation__link {
-	padding: 10px;
+.navigation__item {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 10px;
 }
-.navigation__link:hover {
+.navigation__item:hover {
 	border: 1px solid rgba(0, 0, 0, 1);
 	color: rgb(0, 0, 0);
+}
+.navigation__link {
+	margin: 15px;
+	display: block;
 }
 
 .item {
