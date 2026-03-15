@@ -11,7 +11,7 @@
 .header {
 	display: flex;
 	justify-content: center;
-	margin: 100px auto 50px;
+	margin: 25px auto 25px;
 }
 
 .header__title {
