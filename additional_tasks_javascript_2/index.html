@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Задача №2</title>
+	<script>
+		//Задача №2 - С клавиатуры вводятся размер зарплаты и размер прожиточного минимума. Определить размер социальной помощи (считаем, что зарплата меньше).
+		let a = prompt(`Введите Ваше ФИО:`, `Иванов Иван Иванович`);
+		let b = parseFloat(prompt(`Сколько Вы зарабатываете в месяц?:`, 8000));
+
+		const living_wage = 20000; //Прожиточный минимум
+
+		//Размер социальной помощи
+		let social_assistance = Math.max(0, Math.floor(living_wage - b));
+
+		//Вывод результатов
+		document.write(`
+			<h3>Здравствуйте, уважаемый/ая ${a}.</h3>
+			<p>Размер социальной помощи составляет: ${social_assistance} грн.</p>
+			<p>Пройдите в кабинет социальной помощи для получения помощи. Он находится по адресу: ул. Социальная, д. 10, каб. 5.</p>
+		`);
+	</script>
+</head>
+<body></body>
+</html>
