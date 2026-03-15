@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Задача №1</title>
+	<script>
+		//Задача №1 - Дана ширина экрана и количество элементов, которые должны отображаться в строке. Определить ширину элементов, которые должны отображаться в этой строке.
+		let a = parseFloat(prompt(`Введите желаемую ширину экрана:`, 1080));
+		let b = parseFloat(prompt(`Введите желаемое кол-во элементов:`, 5));
+		let c = parseFloat(prompt(`Введите желаемые отступы от краёв:`, 0));
+		let d = parseFloat(prompt(`Введите желаемые отступы между элементами:`, 0));
+
+		const margin = 2; //кол-во отступов по краям(1 слева и 1 справа)
+		const padding = Math.floor(b - 1); //кол-во отступов между элементами
+
+		//Поиск ширины элемента без отступов
+		let wmm = Math.floor(a / b);
+		// Расчёт ширины отступов по краям
+		let marginwidth = Math.floor(c * margin);
+		// Расчёт ширины отступов между элементами
+		let paddingwidth = Math.floor(d * padding);
+		//Поиск ширины элемента с отступами
+		let wpm = Math.floor((a - marginwidth - paddingwidth) / b);
+
+		//Вывод результатов
+		document.write(`
+		<h1>Задача №1</h1>
+		<p>Дана ширина экрана и количество элементов, которые должны отображаться в строке. Определить ширину элементов, которые должны отображаться в этой строке.</p>
+			<ul>
+				<li>Ширина элементов без отступов = ${wmm}px.</li>
+				<li>Ширина элементов с отступами = ${wpm}px.</li>
+			</ul>
+		`);
+	</script>
+</head>
+<body></body>
+</html>
