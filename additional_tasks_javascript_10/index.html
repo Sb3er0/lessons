@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Задача №10</title>
+	<script>
+		//Задача №10 - С клавиатуры вводится количество монет номиналом 1 копейка. Определить, сколько гривен и копеек в этой сумме. Например, дано 245 копеек → 2 грн 45 копеек.
+
+		//Ввод данных
+		let x = parseInt(prompt(`Введите значение переменной "x":`, 235));
+		//Константы
+		const COINS_IN_GRN = 100; //Количество копеек в одной гривне
+		//Расчёты
+		let a = Math.floor(x / COINS_IN_GRN); //Количество гриен
+		let c = x % COINS_IN_GRN; //Количество копеек
+		//Вывод результатов
+		document.write(`
+		<p>У Вас есть ${x} копеек, а это ${a} гривен ${c} копеек.</p>
+		`);
+	</script>
+</head>
+<body></body>
+</html>
