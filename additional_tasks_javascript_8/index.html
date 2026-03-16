@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Задача №8</title>
+	<script>
+		//Задача №8 - Разработать программу (не использовать if), которая по номеру года Y определяет номер века C (учесть, что началом XX века был 1901, а не 1900 год).
+
+		//Ввод данных
+		let Y = parseInt(prompt(`Введите номер года Y:`, 2026));
+		//Константы
+		const YEARS_IN_CENTURY = 100; //Количество лет в веке
+		const CENTURY_OFFSET = 1; //Смещение для определения века (учитывая, что XX век начался в 1901 году)
+		//Расчёты
+		//округление вниз((год - смещение) / количество лет в веке) + 1 (для получения номера века)
+		let a = Math.floor((Y - CENTURY_OFFSET) / YEARS_IN_CENTURY) + 1; //Номер века
+		//Вывод результатов
+		document.write(`
+		<p>Вы указали ${Y} год, а это ${a} век.</p>
+		`);
+	</script>
+</head>
+<body></body>
+</html>
