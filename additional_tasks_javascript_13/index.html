@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Задача №13</title>
+	<script>
+		//Задача №13 - Определить, сколько полных недель в указанном количестве дней.
+
+		//Ввод данных
+		let x = parseInt(prompt(`Введите количество дней "x":`, 235));
+		//Константы
+		const DAYS_IN_WEEK = 7;
+		//Расчёты
+		let a = Math.floor(x / DAYS_IN_WEEK); //Количество полных недель
+		let b = x % DAYS_IN_WEEK; //Количество оставшихся дней
+		//Вывод результатов
+		document.write(`
+		<p>Вы указали ${x} д.</p>
+		<p>В указанных Вами днях ${a} полных недель и ${b} оставшихся дней.</p>
+		`);
+	</script>
+</head>
+<body></body>
+</html>
