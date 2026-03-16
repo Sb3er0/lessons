@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Задача №15</title>
+	<script>
+		//Задача №15 - С клавиатуры вводится количество месяцев, прошедших от некоторого момента времени. Вывести полное количество лет и месяцев. Например, дано 28 месяцев → 2 года и 4 месяца.
+
+		//Ввод данных
+		let x = parseInt(prompt(`Введите значение переменной "x":`, 25));
+		//Константы
+		const MONTHS_IN_YEAR = 12; //Количество месяцев в одном году
+		//Расчёты
+		let a = Math.floor(x / MONTHS_IN_YEAR); //Количество лет
+		let b = x % MONTHS_IN_YEAR; //Количество месяцев
+		//Вывод результатов
+		document.write(`
+		<p>Вы указали ${x} месяцев, а это ${a} лет ${b} месяцев.</p>
+		`);
+	</script>
+</head>
+<body></body>
+</html>
