@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Задача №12</title>
+	<script>
+		//Задача №12 - С клавиатуры вводится количество монет номиналом 2 копейки (5 коп, 25 коп, 50 коп). Определить, сколько гривен и копеек в этой сумме.
+
+		//Ввод данных
+		let a = parseInt(prompt(`Введите кол-во монет, имеющихся у Вас номиналом "2 копейки":`, 10));
+		let b = parseInt(prompt(`Введите кол-во монет, имеющихся у Вас номиналом "5 копеек":`, 10));
+		let c = parseInt(prompt(`Введите кол-во монет, имеющихся у Вас номиналом "25 копеек":`, 10));
+		let d = parseInt(prompt(`Введите кол-во монет, имеющихся у Вас номиналом "50 копеек":`, 10));
+
+		//Константы
+		const TWO_COINS = 2; //Номинал монеты в 2 копейки
+		const FIVE_COINS = 5; //Номинал монеты в 5 копеек
+		const TWENTY_FIVE_COINS = 25; //Номинал монеты в 25 копеек
+		const FIFTY_COINS = 50; //Номинал монеты в 50 копеек
+		const COINS_IN_GRN = 100; //Количество копеек в одной гривне
+
+		//Расчёты
+		let SUM_TWO_COINS = a * TWO_COINS; //Сумма монет в 2 копейки
+		let SUM_FIVE_COINS = b * FIVE_COINS; //Сумма монет в 5 копеек
+		let SUM_TWENTY_FIVE_COINS = c * TWENTY_FIVE_COINS; //Сумма монет в 25 копеек
+		let SUM_FIFTY_COINS = d * FIFTY_COINS; //Сумма монет в 50 копеек
+		let x = SUM_TWO_COINS + SUM_FIVE_COINS + SUM_TWENTY_FIVE_COINS + SUM_FIFTY_COINS; //Общая сумма в копейках
+
+		let SUM = Math.floor(x / COINS_IN_GRN); //Количество гривен
+		let KOP = x % COINS_IN_GRN; //Количество копеек
+
+		//Вывод результатов
+		document.write(`
+		<h3>У Вас есть:</h3>
+		<ul>
+			<li>${a} монет номиналом 2 копейки</li>
+			<li>${b} монет номиналом 5 копеек</li>
+			<li>${c} монет номиналом 25 копеек</li>
+			<li>${d} монет номиналом 50 копеек</li>
+		</ul>
+		<p>Суммарно у Вас есть ${x} копеек, а это ${SUM} гривен ${KOP} копеек.</p>
+		`);
+	</script>
+</head>
+<body></body>
+</html>
