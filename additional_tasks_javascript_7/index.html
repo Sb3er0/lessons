@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Задача №7</title>
+	<script>
+		//Задача №7 - Составить алгоритм, который вычисляет целую и дробную часть данного числа x. Например: число 23,56 → целая: 23, дробная: 0,56.
+
+		//Ввод данных
+		let x = parseFloat(prompt(`Введите значение переменной "x":`, 25.56))
+
+		//Расчёты
+		let a = Math.floor(x) //Целая часть
+		let b = parseFloat(x - a).toFixed(2)  //Дробная часть
+		//Вывод результатов
+		document.write(`
+			<ul>
+				<li>Ваше число: ${x}</li>
+				<li>Целая часть от Вашего числа: ${a}</li>
+				<li>Дробная часть от Вашего числа: ${b}</li>
+			</ul>
+		`);
+	</script>
+</head>
+<body></body>
+</html>
