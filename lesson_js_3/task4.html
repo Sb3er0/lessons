@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Урок 3. Задача №4</title>
+	<!-- С клавиатуры вводится возраст человека. Вывести на экран, кем он является (ребенком в садике, школьником, студентом, работником, пенсионером). -->
+	<script>
+		// Ввод данных
+		const age = parseInt(prompt("Введите ваш возраст:", 25));
+		let result;
+		// Решение задачи
+		if (age < 4) {
+			result = "Вы - младенец.";
+		} else if (age < 7) {
+			result = "Вы - ребенок в садике.";
+		} else if (age < 18) {
+			result = "Вы - школьник.";
+		} else if (age < 25) {
+			result = "Вы - студент.";
+		} else if (age < 65) {
+			result = "Вы - работник.";
+		} else if (age < 110) {
+			result = "Вы - пенсионер.";
+		} else {
+			result = "Вы - кто?";
+		}
+		document.write(`
+			<p>Ваш возраст составляет: ${age} лет.</p>
+			<p>${result}</p>
+		`);
+	</script>
+</head>
+<body></body>
+</html>
+
+
+

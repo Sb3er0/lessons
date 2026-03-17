@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Урок 3. Задача №3</title>
+	<!-- Случайным образом генерируется число от 1 до 5. Попробуйте угадать число за 2 попытки. -->
+	<script>
+		// Константы
+		const minNumber = 1;
+		const maxNumber = 5;
+		// Генерация случайного числа от 1 до 5
+		const randomNumber = Math.floor(Math.random() * maxNumber + 1);
+		// Ввод данных от пользователя
+		let userGuess = parseInt(prompt(`Угадайте число от ${minNumber} до ${maxNumber}. У вас есть 2 попытки.`));
+		
+		// Решение задачи. Вариант 1.
+		// if (userGuess == randomNumber) {
+		// 	document.write(`Поздравляем! Вы угадали число с первой попытки! Правильный ответ: ${randomNumber}`);
+		// } else {
+		// 	userGuess = parseInt(prompt("Попробуйте еще раз. У вас осталась 1 попытка. "));
+		// 	if (userGuess == randomNumber) {
+		// 		document.write(`Поздравляем! Вы угадали число со второй попытки! Правильный ответ: ${randomNumber}`);
+		// 	} else {
+		// 		document.write(`К сожалению, вы не угадали число. Правильный ответ: ${randomNumber}`);
+		// 	}
+		// }
+
+		// Решение задачи. Вариант 2.
+		if (userGuess >= minNumber && userGuess <= maxNumber) {
+			if (userGuess == randomNumber) {
+				document.write(`Поздравляем! Вы угадали число с первой попытки! Правильный ответ: ${randomNumber}`);
+			} else {
+				userGuess = parseInt(prompt("Попробуйте еще раз. У вас осталась 1 попытка. "));
+				if (userGuess == randomNumber) {
+					document.write(`Поздравляем! Вы угадали число со второй попытки! Правильный ответ: ${randomNumber}`);
+				} else {
+					document.write(`К сожалению, вы не угадали число. Правильный ответ: ${randomNumber}`);
+				}
+			}
+		} else {
+			document.write(`Вы ввели число вне диапазона от ${minNumber} до ${maxNumber}. Пожалуйста, перезагрузите страницу и попробуйте снова.`);
+		}
+	</script>
+</head>
+<body></body>
+</html>

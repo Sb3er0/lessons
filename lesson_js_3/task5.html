@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Урок 3. Задача №5</title>
+	<!-- С клавиатуры вводится категория водителя (А — мотоцикл, В — легковой автомобиль, С — грузовой автомобиль). Вывести на экран название транспортного средства, которым он может управлять. -->
+	<script>
+		// Ввод данных
+		const vehicleCategory = prompt("Введите категорию транспортного средства (А, В, С):");
+		const catA = "мотоциклом";
+		const catB = "легковым автомобилем";
+		const catC = "грузовым автомобилем";
+		let result;
+		// Решение задачи
+		if (vehicleCategory === "A" || vehicleCategory === "a") {
+			result = `Вы можете управлять ${catA}.`;
+		} else if (vehicleCategory === "B" || vehicleCategory === "b") {
+			result = `Вы можете управлять ${catA} и ${catB}.`;
+		} else if (vehicleCategory === "C" || vehicleCategory === "c") {
+			result = `Вы можете управлять  ${catA}, ${catB} и ${catC}.`;
+		} else {
+			result = "Некорректная категория транспортного средства.";
+		}
+		document.write(`
+			<p>Ваша категория транспортного средства: ${vehicleCategory}</p>
+			<p>${result}</p>
+		`);
+	</script>
+</head>
+<body></body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Урок 3. Задача №1</title>
+	<!-- С клавиатуры вводятся имена двух детей и количество у них конфет. Вывести на экран имя того ребенка, у которого количество конфет больше, или вывести, что количество одинаковое. -->
+	<script>
+		//Ввод данных
+		const child1Name = prompt("Введите имя первого ребенка:", "John");
+		const child1Candies = parseInt(prompt(`Введите количество конфет у ${child1Name}:`));
+		const child2Name = prompt("Введите имя второго ребенка:", "Jane");
+		const child2Candies = parseInt(prompt(`Введите количество конфет у ${child2Name}:`));
+		// Результат
+		let result;
+		//Решение задачи
+		if (child1Candies > child2Candies) {
+			result = `${child1Name} имеет больше конфет`;
+		} else if (child2Candies > child1Candies) {
+			result = `${child2Name} имеет больше конфет`;
+		} else {
+			result = "Оба ребенка имеют одинаковое количество конфет.";
+		}
+		//Вывод результата
+		document.write(`
+			<p> ${child1Name} имеет ${child1Candies} конфет. </p>
+			<p> ${child2Name} имеет ${child2Candies} конфет. </p>
+			<p> ${result} </p>
+		`);
+	</script>
+</head>
+<body></body>
+</html>

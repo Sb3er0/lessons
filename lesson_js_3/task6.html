@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Урок 3. Задача №6</title>
+	<!-- С клавиатуры вводится номер дня недели. Вывести на экран название дня. -->
+	<script>
+		// Ввод данных
+		const number = parseInt(prompt("Номер дня недели (1-7):", 25));
+		let result;
+		// Решение задачи
+		if (number === 1) {
+			result = "Понедельник";
+		} else if (number === 2) {
+			result = "Вторник";
+		} else if (number === 3) {
+			result = "Среда";
+		} else if (number === 4) {
+			result = "Четверг";
+		} else if (number === 5) {
+			result = "Пятница";
+		} else if (number === 6) {
+			result = "Суббота";
+		} else if (number === 7) {
+			result = "Воскресенье";
+		} else {
+			result = "Некорректный номер дня недели";
+		}
+		document.write(`
+			<p>Вы указали: ${number} номер дня недели.</p>
+			<p>Это: ${result}.</p>
+		`);
+	</script>
+</head>
+<body></body>
+</html>
+</head>
+<body></body>
+</html>

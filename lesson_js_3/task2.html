@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Урок 3. Задача №2</title>
+	<!-- С клавиатуры вводится цена товара и количество денег. Если денег не хватает — отказываем в покупке, иначе, если остаются деньги, предлагаем купить лотерею за 4 грн. -->
+	<script>
+		// Ввод данных
+		const price = parseFloat(prompt("Введите цену товара:", 100));
+		const money = parseFloat(prompt("Введите сумму денег которые у Вас есть:", 112));
+		let result;
+		// Решение задачи
+		if (money < price) {
+			result = "У вас недостаточно денег для покупки.";
+		} else if (money > price) {
+			const change = money - price;
+			result = `Покупка успешна! Ваш сдача: ${change.toFixed(2)} грн. Хотите купить лотерею за 4 грн?`;
+		} else {
+			result = "Покупка успешна! У вас нет сдачи.";
+		}
+		document.write(`
+			<p>Цена товара: ${price.toFixed(2)} грн.</p>
+			<p>У вас есть: ${money.toFixed(2)} грн.</p>
+			<p>${result}</p>
+		`);
+	</script>
+</head>
+<body></body>
+</html>

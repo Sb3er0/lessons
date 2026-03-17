@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Урок 3. Задача №7</title>
+	<!-- С клавиатуры вводится номер месяца. Вывести, к какому времени года он относится. -->
+	<script>
+		// Ввод данных
+		const monthNumber = parseInt(prompt("Введите номер месяца (1-12):", 9));
+		let result;
+		// Решение задачи
+		if (monthNumber < 1 || monthNumber > 12) {
+			result = "Некорректный номер месяца.";
+		} else if (monthNumber < 3|| monthNumber > 11) {
+			result = "Зима.";
+		} else if (monthNumber < 6) {
+			result = "Весна.";
+		} else if (monthNumber < 9) {
+			result = "Лето.";
+		} else {
+			result = "Осень.";
+		}
+		document.write(`
+			<p>Вы указали: ${monthNumber} номер месяца.</p>
+			<p>Это: ${result}</p>
+		`);
+	</script>
+</head>
+<body></body>
+</html>
